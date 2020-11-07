@@ -16,14 +16,14 @@ var gElement = svg.append("g");
 gElement.attr("transform", "translate(100,100)");
 
 var data = [
-    { year: 2010, growth: 13.6, births: 367752 ,deceased: 145875},
-    { year: 2011, growth: 13.8, births: 372544 ,deceased: 144213},
-    { year: 2012, growth: 14.1, births: 379121 ,deceased: 141220},
-    { year: 2013, growth: 14.7, births: 393421 ,deceased: 137630},
-    { year: 2014, growth: 15.5, births: 401066 ,deceased: 132236},
-    { year: 2016, growth: 15.6, births: 400640 ,deceased: 131373},
-    { year: 2017, growth: 14.4, births: 390520 ,deceased: 130033},
-    { year: 2019, growth: 14.6, births: 403064 ,deceased: 133489},
+    { year: 2010, growth: 13.6, births: 367752,deceased: 145875},
+    { year: 2011, growth: 13.8, births: 372544,deceased: 144213},
+    { year: 2012, growth: 14.1, births: 379121,deceased: 141220},
+    { year: 2013, growth: 14.7, births: 393421,deceased: 137630},
+    { year: 2014, growth: 15.5, births: 401066,deceased: 132236},
+    { year: 2016, growth: 15.6, births: 400640,deceased: 131373},
+    { year: 2017, growth: 14.4, births: 390520,deceased: 130033},
+    { year: 2019, growth: 14.6, births: 403064,deceased: 133489},
 ];
 
 xScale.domain(data.map(function(d) { return d.year; }));
