@@ -1,7 +1,7 @@
-var margin = 250;
+var margin = 200;
 var svg = d3.select("svg");
-var width = svg.attr("width")-margin;
-var height = svg.attr("height")-margin;
+var width = svg.attr("width") - margin;
+var height = svg.attr("height") - margin;
 
 svg.append("text")
     .attr("transform", "translate(100,0)")
@@ -11,6 +11,7 @@ svg.append("text")
     .text("Прирост населения в Казахстане (на 1000)");
 var xScale = d3.scaleBand().range([0, width]).padding(0.4);
 var yScale = d3.scaleLinear().range([height, 0]);
+
 var gElement = svg.append("g");
 gElement.attr("transform", "translate(100,100)");
 
@@ -24,6 +25,7 @@ var data = [
     { year: 2017, growth: 14.4, births: 390520 ,deceased: 130033},
     { year: 2019, growth: 14.6, births: 403064 ,deceased: 133489},
 ];
+
 xScale.domain(data.map(function(d) { return d.year; }));
 yScale.domain([0, d3.max(data, function(d) { return d.growth; })]);
 
