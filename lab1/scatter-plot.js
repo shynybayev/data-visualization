@@ -1,13 +1,13 @@
 var data = [
-  {country:"Almaty", gold:10, silver:20},
-  {country:"Astana", gold:20, silver:100},
-  {country:"Kostanay", gold:200, silver:50},
-  {country:"Karagandy", gold:25, silver:80},
-  {country:"Taraz", gold:10, silver:200},
-  {country:"Semey", gold:150, silver:75},
-  {country:"Aktau", gold:10, silver:70},
-  {country:"Uralsk", gold:30, silver:150},
-  {country:"Taldykorgan", gold:100, silver:15}
+  {country:"USA", gold:10, silver:20},
+  {country:"Kazakhstan", gold:20, silver:100},
+  {country:"UK", gold:200, silver:50},
+  {country:"OAE", gold:25, silver:80},
+  {country:"Egypt", gold:10, silver:200},
+  {country:"Russia", gold:150, silver:75},
+  {country:"Canada", gold:10, silver:70},
+  {country:"China", gold:30, silver:150},
+  {country:"Bahrein", gold:100, silver:15}
 ]
 
 var svg = d3.select("body")
