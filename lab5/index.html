@@ -21,7 +21,7 @@
         .attr("tranform", "translate(" + margin.left + "," + margin.top + ")");
     console.log(margin);
 
-    d3.json("http://localhost:8000/wordnet.json", (data) => {
+    d3.json("http://localhost:8555/wordnet_2.json ", (data) => {
         console.log(data);
 
         var node = svg
@@ -63,7 +63,7 @@
             link
                 .attr("x1", function(d) {
                     if (d.type == "synonym") {
-                        var node = d3.select("#n" + d.target.id).style('fill', 'yellow')
+                        var node = d3.select("#n" + d.target.id).style('fill', 'red')
                     }
                     return d.source.x;
                 })
